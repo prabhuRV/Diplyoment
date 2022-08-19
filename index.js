@@ -9,8 +9,7 @@ const dataCollectionModel = require("./models/user.model");
 require('dotenv').config()
 
 app.use(express.json());
-
-
+//jgfgsjgfg
 
 app.get("/",(req,res)=>{
 
