@@ -11,12 +11,12 @@ require('dotenv').config()
 app.use(express.json());
 //jgfgsjgfg
 
-app.get("/",(req,res)=>{
+app.get("/",async(req,res)=>{
 
     let {name}=req.query
     console.log(name)
     let data=new dataCollectionModel({name})
-    data.save()
+   await data.save()
   res.send("Welcome to Home Page");
 })
 
